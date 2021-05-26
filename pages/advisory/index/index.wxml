@@ -1,0 +1,7 @@
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+    <view class="cu-bar fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+        <button class="tab" tye="primary" size="mini">{{tab1}}</button>
+        <button class="tab" tye="primary" size="mini">{{tab2}}</button>
+        <button class="tab" tye="primary" size="mini">{{tab3}}</button>
+    </view>
+</view>

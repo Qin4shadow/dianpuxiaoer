@@ -1,0 +1,46 @@
+<view class='UCenter-bg'>
+    <image src='/img/logo.png' class='png' mode='widthFix'></image>
+    <view class='text-xl'> 测试 </view>
+    <view class='margin-top-sm'>
+        <text>普通会员</text>
+    </view>
+    <image src='/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+</view>
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+    <view class="cu-item arrow">
+        <navigator class='content' open-type="navigate" hover-class='none' url="/pages/order/index/index">
+            <text class='icon-send text-cyan'></text>
+            <text class='text-grey'>我的订单</text>
+        </navigator>
+    </view>
+    <view class="cu-item arrow">
+        <navigator class='content' open-type="navigate" hover-class='none' url="/pages/vipcard/index/index">
+            <text class='icon-vipcard text-green'></text>
+            <text class='text-grey'>会员卡</text>
+        </navigator>
+    </view>
+    <view class="cu-item arrow">
+        <navigator class='content' open-type="navigate" hover-class='none' url="/pages/coupon/index/index">
+            <text class='icon-ticket text-red'></text>
+            <text class='text-grey'>优惠券</text>
+        </navigator>
+    </view>
+    <view class="cu-item arrow">
+        <navigator class='content' open-type="navigate" hover-class='none' url="/pages/user/address/index">
+            <text class='icon-location text-orange'></text>
+            <text class='text-grey'>激活码</text>
+        </navigator>
+    </view>
+    <view class="cu-item arrow">
+        <navigator class='content' open-type="navigate" hover-class='none' url="/pages/user/address/index">
+            <text class='icon-location text-orange'></text>
+            <text class='text-grey'>地址管理</text>
+        </navigator>
+    </view>
+    <view class="cu-item arrow">
+        <button class='cu-btn content' open-type='feedback'>
+            <text class='icon-writefill text-grey'></text>
+            <text class='text-grey'>意见反馈</text>
+        </button>
+    </view>
+</view>

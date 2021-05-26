@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/home/index/index",
+    "pages/advisory/index/index",
+    "pages/user/index/index",
+    "pages/user/address/index",
+    "pages/auth/auth",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "店铺小二",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "selectedColor": "#F95A5F",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/advisory/index/index",
+        "iconPath": "img/zixun.png",
+        "selectedIconPath": "img/zixun.png",
+        "text": "咨询"
+      },
+      {
+        "pagePath": "pages/user/index/index",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

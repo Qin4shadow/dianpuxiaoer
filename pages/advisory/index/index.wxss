@@ -1,0 +1,6 @@
+.cu-custom {
+    color: rgb(8, 8, 8)fff;
+}
+.tab {
+    width: 33%;
+}
