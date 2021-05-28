@@ -22,22 +22,22 @@ Page({
 	onLoad: function (option) {
 
 	},
-	// add: function () {
-	// 	let that = this;
-	// 	wx.showModal({
-	// 		title: '提示',
-	// 		content: '是否获取微信的收货地址？',
-	// 		success(res) {
-	// 			if (res.confirm) {
-	// 				that.wxaddress();
-	// 			} else if (res.cancel) {
-	// 				wx.redirectTo({
-	// 					url: '/pages/address/add/index'
-	// 				});
-	// 			}
-	// 		}
-	// 	});
-	// },
+	add: function () {
+		let that = this;
+		wx.showModal({
+			title: '提示',
+			content: '是否获取微信的收货地址？',
+			success(res) {
+				if (res.confirm) {
+					that.wxaddress();
+				} else if (res.cancel) {
+					wx.redirectTo({
+						url: '/pages/address/add/index'
+					});
+				}
+			}
+		});
+	},
 	//获取微信的收货地址
 	wxaddress: function () {
 		let that = this;

@@ -1,0 +1,17 @@
+<view class="main">
+
+<navigator class="content" wx:for="{{5}}">
+  <view class="pic">
+    <image src="/img/goods01.png"></image>
+  </view>
+  <view class="txt">
+    <view class="title">
+      标题部分
+    </view>
+    <view class="info">
+      <text> 作者：</text>秦岭 <text space="ensp">  -   </text> <text> 时间：</text>2021-5-27
+    </view>
+  </view>
+</navigator>
+
+</view>

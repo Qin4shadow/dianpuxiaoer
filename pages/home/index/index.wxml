@@ -1,28 +1,86 @@
 <!--状态栏区域-->
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-    <view class="cu-bar fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-        <view class="head-title canui-head-title">店铺小二</view>
-    </view>
+<view class="header">
+  <view class="hdCon">
+    <navigator open-type="switchTab" url="/pages/index/index" class="logo">
+      <image mode="heightFix" src="/img/zixun.png"></image>
+    </navigator>
+    <navigator class="kefu">
+      <button class="btn" open-type="contact"></button>
+      <image mode="heightFix" src="/img/kefu.png"></image>
+    </navigator>
+  </view>
 </view>
 
 <!--轮播区域-->
-<swiper class="screen-swiper square-dot shadow-warp bg-white" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="swiperchange">
-    <swiper-item wx:for="{{swiperlist}}" wx:key="item.id">
-        <image src="{{item.url}}" mode='aspectFill' bindtap="swipclick"></image>
-    </swiper-item>
+<swiper class="screen-swiper square-dot shadow-warp bg-white" indicator-dots="true" circular="true" autoplay="true"
+  interval="5000" duration="500" bindchange="swiperchange">
+  <swiper-item wx:for="{{swiperlist}}" wx:key="id">
+    <image src="{{item.url}}" mode='aspectFill' bindtap="swipclick"></image>
+  </swiper-item>
 </swiper>
 
 <!--宫格功能区域-->
-<view class="cu-list grid col-6 no-border">
-    <block wx:for="{{iconList}}" wx:key="item.id">
-        <view class="cu-item" bindtap="itemckcred" data-index="{{item.id}}" data-itemtype="{{item.type}}">
-            <view class='icon-{{item.icon}} text-{{item.color}}'> </view>
-            <text>{{item.name}}</text>
-        </view>
-    </block>
-</view>
+<scroll-view class="major" scroll-x>
+  <view class="majorCon">
+    <navigator class="box" url="/pages/xuanchuan/xuanchuan" wx:for="{{iconList}}" wx:key="id">
+      <view class="cu-item" bindtap="itemckcred" data-index="{{item.id}}" data-itemtype="{{item.type}}">
+        <image class="pic" src="{{item.url}}"></image>
+        <text class="txt">{{item.name}}</text>
+      </view>
+    </navigator>
+  </view>
+</scroll-view>
 
-<!--视频区域-->
-<video class="canui-video shadow-warp bg-white" src="{{videosrc}}"></video>
+<!-- 视频区域
+<video class="canui-video shadow-warp bg-white" src="{{videosrc}}"></video> -->
 
 <!--商品推荐-->
+<view class="shops">
+    <pubTitle myTitle="推荐" myUrl="/pages/xuanchuan/xuanchuan"/>
+
+    <view class="wkMain">
+      <navigator class="box">
+        <image class="pic" src="/img/square-1.jpg"></image>
+        <view class="ceng">
+          <view class="title">cat1</view>
+          <view class="line"></view>
+          <view class="des">good cat</view>
+        </view>
+      </navigator>
+
+      <navigator class="box">
+        <image class="pic" src="/img/square-2.jpg"></image>
+        <view class="ceng">
+          <view class="title">cat1</view>
+          <view class="line"></view>
+          <view class="des">good cat</view>
+        </view>
+      </navigator>
+
+      <navigator class="box">
+        <image class="pic" src="/img/square-3.jpg"></image>
+        <view class="ceng">
+          <view class="title">cat1</view>
+          <view class="line"></view>
+          <view class="des">good cat</view>
+        </view>
+      </navigator>
+
+      <navigator class="box">
+        <image class="pic" src="/img/square-4.jpg"></image>
+        <view class="ceng">
+          <view class="title">cat1</view>
+          <view class="line"></view>
+          <view class="des">good cat</view>
+        </view>
+      </navigator>
+    </view>
+    <pubTitle />
+</view>
+
+
+<!-- dibumokuai -->
+<view class="footer">
+  <image src="/img/logo.png" mode="widthFix" class="pic"></image>
+  <view class="text">-店铺小二-</view>
+</view>

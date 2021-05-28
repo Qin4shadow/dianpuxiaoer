@@ -3,9 +3,14 @@
     "pages/home/index/index",
     "pages/advisory/index/index",
     "pages/user/index/index",
-    "pages/user/address/index",
     "pages/auth/auth",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/user/address/index",
+    "pages/vipcard/index/index",
+    "pages/vipcard/details/index",
+    "pages/order/index/index",
+    "pages/order/details/index",
+    "pages/xuanchuan/xuanchuan"
   ],
   "window":{
     "backgroundTextStyle":"dark",

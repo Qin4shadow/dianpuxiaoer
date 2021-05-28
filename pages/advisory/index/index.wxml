@@ -1,7 +1,24 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-    <view class="cu-bar fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-        <button class="tab" tye="primary" size="mini">{{tab1}}</button>
-        <button class="tab" tye="primary" size="mini">{{tab2}}</button>
-        <button class="tab" tye="primary" size="mini">{{tab3}}</button>
+<tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="main">
+
+      <navigator class="content" wx:for="{{dataList}}" wx:key="index">
+        <view class="pic">
+          <image src="{{item.picurl}}"></image>
+        </view>
+        <view class="txt">
+          <view class="title">
+            {{item.title}}
+          </view>
+          <view class="info">
+            <text> 作者：</text>{{item.author}} <text space="ensp">  -   </text>
+            <text> 时间：</text>{{item.posttime}}
+          </view>
+        </view>
+      </navigator>
+
     </view>
-</view>
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">1</block>
+  <block wx:else>2</block>
+</tabs>
